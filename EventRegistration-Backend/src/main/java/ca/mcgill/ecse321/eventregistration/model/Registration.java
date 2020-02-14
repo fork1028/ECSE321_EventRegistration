@@ -15,15 +15,15 @@ this.id = value;
 public Integer getId() {
 return this.id;
     }
-private Person participant;
+private Person person;
 
 @ManyToOne(optional=false)
-public Person getParticipant() {
-   return this.participant;
+public Person getperson() {
+   return this.person;
 }
 
-public void setParticipant(Person participant) {
-   this.participant = participant;
+public void setPerson(Person person) {
+   this.person = person;
 }
 
 private Event event;
