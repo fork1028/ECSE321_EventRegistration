@@ -49,7 +49,7 @@ public class EventRegistrationService {
 	public Event createEvent(String name, Date date, Time startTime, Time endTime) {
 		Event event = new Event();
 		event.setName(name);
-		event.setEventDate(date);
+		event.setDate(date);
 		event.setStartTime(startTime);
 		event.setEndTime(endTime);
 		eventRepository.save(event);

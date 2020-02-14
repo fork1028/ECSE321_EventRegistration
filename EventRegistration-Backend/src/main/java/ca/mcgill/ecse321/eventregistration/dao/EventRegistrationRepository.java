@@ -38,7 +38,7 @@ public class EventRegistrationRepository {
 	public Event createEvent(String name, Date date, Time startTime, Time endTime) {
 		Event e = new Event();
 		e.setName(name);
-		e.setEventDate(date);
+		e.setDate(date);
 		e.setStartTime(startTime);
 		e.setEndTime(endTime);
 		entityManager.persist(e);
@@ -47,7 +47,7 @@ public class EventRegistrationRepository {
 
 	@Transactional
 	public Event getEvent(String name) {
-		Event e = entityManager.find(Event.class, name);	
+		Event e = entityManager.find(Event.class, name);
 		return e;
 	}
 	
@@ -58,5 +58,6 @@ public class EventRegistrationRepository {
 		List<Event> resultList = q.getResultList();
 		return resultList;
 	}
+
 
 }
