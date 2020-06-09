@@ -1,4 +1,4 @@
-# eventregistration
+# Eventregistration
 [![Build Status](https://travis-ci.com/fork1028/eventregistration.svg?branch=master)](https://travis-ci.com/fork1028/eventregistration)
 # ECSE 321 - Individual Assignment
 
